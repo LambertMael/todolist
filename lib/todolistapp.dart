@@ -20,7 +20,8 @@ class _ToDoListAppState extends State<ToDoListApp> {
 
   @override
   void initState() {
-    final List<Task> initialTasks = generateFakeTasks().where((Task task)=>task.status==TaskStatus.done).toList();
+    //final List<Task> initialTasks = generateFakeTasks().where((Task task)=>task.status==TaskStatus.done).toList();
+    final List<Task> initialTasks = generateFakeTasks();
     _tasks = initialTasks;
 
     super.initState();
